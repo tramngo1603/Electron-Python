@@ -12,15 +12,17 @@
     <h1>Hello Sum Lady!</h1>
     <p>Input something like <code>1 + 1</code>.</p>
     <p>
-    The Sum Lady will return the sum of the two numbers you input. </p>
+    The Sum Lady will return the sum of the two numbers you input.<br><br>
+    We support intergers and floating numbers.</p>
     <form>
     First number:<br>
     <input id="box1" type="text" name="firstnumber"><br>
     Second number:<br>
-    <input id="box2" type="text" name="lastname"><br><br>
+    <input id="box2" type="text" name="secondnumber"><br><br>
+
+    <button id="my_button" type="button" class="btn btn-outline-primary">Sum</button>
     </form>
-    <button id="my_button" type="button" class="btn btn-outline-primary">Sum!</button>
-    <div id="result"></div>
+    <input type="text" id="result">
   </body>
   <script>
   require('./renderer.js')
