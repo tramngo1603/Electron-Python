@@ -2,6 +2,13 @@
 
 ## Instructions:
 
+#### 1) Download the zip file from this repository
+#### 2) Check that Python3 is installed
+```
+python --version
+```
+ 
+## Developer Guide:
 ### 1) Pip install pyinstaller
 ```
 pip install pyinstaller
@@ -9,11 +16,13 @@ pip install pyinstaller
 ### 2) pyinstaller add.py
 #### This will create a bundle in the sub-directory called `dist`
 
-### 3) Create an HTML file called index.html
-#### This will control the content the GUI shows.
+###
+### 3) Create four main files for the Electron app that are called package.json, index.html, main.js, and renderer.js
 
-### 4) Create a main.js file:
-#### This file contains all of the default codes required for an Electron desktop app.
+#### package.json:
 
-### 5) Create a renderer.js file:
-#### This renderer file 
+#### index.html: controls the content the GUI shows.
+
+#### main.js: contains all of the default code required to build an Electron desktop app.
+
+#### renderer.js: connects the backend Python process with the HTML front-end.
