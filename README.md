@@ -2,15 +2,13 @@
 
 ### Instructions:
 
-1) Download the zip file from this repository
-<br>
-2) Unzip the directory
-<br>
-3) Look for and run SumLady.exe
+1. Download the zip file from this repository
+2. Unzip the directory
+3. Look for and run SumLady.exe
 
 ### Developer Guide:
 
-##### 1) Create four main files for the Electron app that are called package.json, index.html, main.js, and renderer.js
+##### 1) Create five main files for the Electron app that are called package.json, index.html, main.js, renderer.js, and add.py
 
 - `package.json`: description information of the created Electron app that we want to include such as version, authors, or devDependencies.
 - `index.html`: controls the content the GUI shows.
@@ -23,8 +21,6 @@
 pip install pyinstaller
 ```
 ##### 3) pyinstaller add.py
-<br>
-
 ```
 pyinstaller --onefile add.py
 ```
