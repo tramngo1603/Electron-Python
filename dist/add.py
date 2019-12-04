@@ -8,4 +8,4 @@ if __name__ == '__main__':
     parser.add_argument('num1', help='First number to add')
     parser.add_argument('num2', help='Second number to add')
     args = parser.parse_args()
-    print(sum_func(int(args.num1), int(args.num2)))
+    print(sum_func(float(args.num1), float(args.num2)))
