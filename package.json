@@ -8,8 +8,8 @@
   },
   "author": "tram-ngo",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "electron": "^1.7.6",
-    "electron-packager": "^9.0.1"
+    "electron-packager": "^9.1.0"
   }
 }
