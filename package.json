@@ -1,15 +1,16 @@
 {
-  "name": "The-sum-lady",
-  "version": "1.0.0",
-  "description": "An Electron and Python - based calculator ",
+  "name": "SumLady",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "author": "tram-ngo",
-  "license": "MIT",
   "dependencies": {
-    "electron": "^1.7.6",
-    "electron-packager": "^9.1.0"
+    "electron-rebuild": "^1.8.8",
+    "zeromq": "^5.2.0",
+    "zerorpc": "git+https://github.com/fyears/zerorpc-node.git"
+  },
+  "devDependencies": {
+    "electron": "^1.8.8",
+    "electron-packager": "^9.0.1"
   }
 }
