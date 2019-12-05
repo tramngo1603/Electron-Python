@@ -17,7 +17,12 @@ const createPyProc = () => {
   let port = '' + selectPort()
 
   // "" around pyExe to handle spaces in path
-  pyProc = child_process.execFile('"' + pyExe + '" ', [port])
+  pyProc = child_process.execFile('"' + pyExe + '" ', [port], (error, stdout, stderr) => {
+    if (error) {
+      throw error;
+    }
+    console.log(stdout);
+  })
 
   if (pyProc != null) {
     //console.log(pyProc)
