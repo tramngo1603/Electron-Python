@@ -13,16 +13,18 @@ const selectPort = () => {
 }
 
 const createPyProc = () => {
-  let pyExe = path.join(__dirname, 'dist', 'add.exe')
+  let pyExe = "add.exe"
   let port = '' + selectPort()
 
-  // "" around pyExe to handle spaces in path
-  pyProc = child_process.execFile('"' + pyExe + '" ', [port])
+  pyProc = child_process.spawn(pyExe, [port], {cwd: path.join(__dirname, 'dist')})
 
   if (pyProc != null) {
     //console.log(pyProc)
     console.log('child process success on port ' + port)
   }
+  pyProc.on('error', (err) => {
+    console.error('Failed to start subprocess: ' + err);
+  });
 }
 
 const exitPyProc = () => {
