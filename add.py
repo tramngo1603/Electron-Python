@@ -1,9 +1,9 @@
 import argparse
 import zerorpc
 
-class SumAPI():
+class SumAPI(object):
     def sum_func(self,a,b):
-        return a+b
+        return (float(a) + float(b))
 
 def main(port):
     addr = 'tcp://127.0.0.1:' + port
