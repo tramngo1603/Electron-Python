@@ -16,7 +16,7 @@ const createPyProc = () => {
   let pyExe = "add.exe"
   let port = '' + selectPort()
 
-  pyProc = child_process.spawn(pyExe, [port], {cwd: path.join(__dirname, 'dist')})
+  pyProc = child_process.spawn(pyExe, [port], {cwd: path.join(__dirname, 'dist', 'add')})
 
   if (pyProc != null) {
     //console.log(pyProc)

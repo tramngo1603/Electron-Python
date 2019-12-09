@@ -22,7 +22,7 @@ pip install pyinstaller
 ```
 ##### 3) pyinstaller add.py
 ```
-pyinstaller --onefile add.py
+pyinstaller add.py
 ```
 
 This will create a bundle in the sub-directory called `dist` that contains `add.exe`
